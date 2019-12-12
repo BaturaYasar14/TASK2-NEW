@@ -3,7 +3,8 @@ namespace Task2
 {
     class Engine
     {
-        private const double Mile = 1.609344;         // per km
+
+        private const double mileOfMile = 1.609344;         // per km
         private const double Gallon = 3.785411784;    // per ltr
         private readonly double Displacement;
         private const double DefaultFuelTankCapacity = 50;
@@ -23,11 +24,11 @@ namespace Task2
         }
         public static double MPG2Lp100Km(double MPG)
         {
-            return (100 * Gallon) / (Mile * MPG);
+            return (100 * Gallon) / (mileOfMile * MPG);
         }
         public static double Lp100Km2MPG(double Lp100Km)
         {
-            return (100 * Gallon) / (Mile * Lp100Km);
+            return (100 * Gallon) / (mileOfMile * Lp100Km);
         }
         public void Work()
         {
